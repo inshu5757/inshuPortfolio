@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas:
+                "logo header header"
+                "nav content content"
+                "nav footer footer";
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 100px 1fr 50px;
+            gap: 10px;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .logo {
+            grid-area: logo;
+            background-color: #3e8e41;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #5cb85c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 10px;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #3e8e41;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">LOGO</div>
+    <div class="header">Header</div>
+    <div class="nav">Navigation</div>
+    <div class="content">Content Area</div>
+    <div class="footer">Footer</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        height: 80px;
+    }
+    
+    
+    .head{
+        text-align: center;
+        border: 1px solid pink;
+        border-radius: 5px;
+        background-color: pink;
+        width: 94%;
+        height: 60px;
+        margin: auto;
+        
+        
+    }
+    .nav{
+        background-color: #333;
+        text-align: center;
+        font-size: 17px;
+        height: 22px;
+    }
+    footer{
+        background-color: #333;
+       height: 80px;
+       display: flex;
+       justify-content: center;
+        
+    }
+    .footer{
+       text-align: center;
+        color: violet;
+        border: 1px solid pink;
+        border-radius: 5px;
+        background-color: pink;
+        width: 94%;
+        height: 30px;
+        margin: auto;
+        padding-top: 20px;
+        
+    }
+    #smith{
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin-top: 6px;
+    }
+    #web{
+        font-size: 15px;
+        
+    }
+    
+</style>
+<body>
+    <header class="myclass">
+        <div class="head"><p id="smith">Riwick Smith</p> <span id="web">Web Devloper & Designer</span></div>
+
+    </header>
+    <div class="nav">
+        <pre>
+            About    Project   Contct
+        </pre>
+    </div>
+    <div>
+        <h2>About Me</h2>
+        <p>Hello I'm Riwick Smith, a passionate web developer with a love for creating beautiful and functional websities. I have experience in HTML, CSS,JavaScript and more.</p>
+    </div>
+    <div>
+        <h2>My Projects</h2>
+       <div class="project">
+         <h3>Project 1</h3>
+        <p>A description of Project 1. Lorem ipsum dolor sit amet,consecter adipiscing elit.</p>
+        </div>
+        <div class="project">
+        <h3>Project 2</h3>
+        <p>A description of Project 2. Lorem ipsum dolor sit amet,consecter adipiscing elit.</p>
+        </div>
+    </div>
+    <div>
+        <h2>Project Statidtics</h2>
+        <table>
+            <thead>
+                <tr>
+                <th>Project</th>
+                <th>Technologies</th>
+                <th>Completion Date</th>
+                <tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Project1</td>
+                    <td>HTML,CSS,JavaScript</td>
+                    <td>june 2024</td>
+                </tr>
+                <tr>
+                    <td>Project2</td>
+                    <td>React,Node.js</td>
+                    <td>Augest 2024</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>
+            Contact Me
+        </h2>
+        <div>
+        <label for="name">
+            Name:
+        </label>
+        <br>
+        <input type="text" id="name">
+        </div>
+        <br>
+        <div>
+        <label for="email">
+            Email:
+        </label>
+        <br>
+        <input type="email" id="email">
+        </div>
+        <br>
+        <div>
+        <label for="contact">
+            Preferred Contact Method
+        </label>
+        <br>
+        <input type="radio" name="mycontact" id="contact"> Email <input type="radio" name="mycontact" id="contact"> Phone
+        </div>
+        <br>
+        <input type="checkbox" name="mycheckbox"> Subscribe to newsletter
+        <br>
+        <input type="submit" value="Send">
+
+    </div>
+    <footer>
+        <p class="footer">&copy 2024 Riwick Smith. All rights reserved.</p>
+    </footer>
+</body>
+</html>

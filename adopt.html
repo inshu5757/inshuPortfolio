@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ca2u.css">
+</head>
+<body>
+   
+    <div class="logo">PawPals</div>
+    <header>
+        <nav>
+                <a href="home2.html">Home</a>
+                
+                <a href="adopt.html">Adopt</a>
+            
+                <a href="donate.html">Donate</a>
+                
+                <a href="about2.html">About us</a>  
+
+                <a href="contact2.html">Contact</a>
+           
+        </nav>
+    </header>
+    <h2>Find Your Perfect Pet at PawPals!</h2>
+<form action="/submit-adopt" method="POST">
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required><br><br>
+
+  <label for="pet-type">Preferred Pet Type:</label>
+  <select id="pet-type" name="pet-type">
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="other">Other</option>
+  </select><br><br>
+
+  <label for="breed">Preferred Breed (Optional):</label>
+  <input type="text" id="breed" name="breed"><br><br>
+
+  <label>Are You Interested in Adoption or Foster Care?</label><br>
+  <input type="radio" id="adopt" name="care-type" value="adoption" required>
+  <label for="adopt">Adoption</label><br>
+  <input type="radio" id="foster" name="care-type" value="foster" required>
+  <label for="foster">Foster Care</label><br><br>
+
+  <label for="home-type">Home Type:</label><br>
+  <input type="radio" id="apartment" name="home-type" value="apartment" required>
+  <label for="apartment">Apartment</label><br>
+  <input type="radio" id="house-yard" name="home-type" value="house-yard" required>
+  <label for="house-yard">House with Yard</label><br>
+  <input type="radio" id="house-no-yard" name="home-type" value="house-no-yard" required>
+  <label for="house-no-yard">House without Yard</label><br><br>
+
+  <label for="pet-experience">Pet Experience:</label>
+  <select id="pet-experience" name="pet-experience">
+    <option value="first-time">First-time pet owner</option>
+    <option value="experienced">Experienced pet owner</option>
+  </select><br><br>
+
+  <label for="reason">Why Do You Want to Adopt a Pet?</label><br>
+  <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+
+  <label for="comments">Additional Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>

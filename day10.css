@@ -1,0 +1,23 @@
+/* p,h1{
+    color: blue;
+    background-color: black;
+} */
+ .myclass{
+    background-color: black;
+    color:blue;
+    text-align: center;
+    border: 4px dotted red;;
+    font-size: 57px;
+    font-family:'Times New Roman', Times, serif;
+
+
+ }
+ .firstclass{
+    background-color: black;
+    color:red;
+    text-align: center;
+    border: 27px double red;;
+    font-size: 57px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+ }

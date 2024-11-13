@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form I am using</title>
+</head>
+<style>
+    .myclass{
+        background-color: pink ;
+        border: 4px solid black;
+        padding: 30px;
+        
+    }
+    
+    h2{
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 96%;
+        
+    }
+    input[type="submit"],input[type="reset"]{
+        color: white;
+        background-color: green;
+    }
+    #sub2{
+        background-color: aqua;
+        color: blue;
+    }
+</style>
+<body>
+    <div class="myclass">
+    <h2> Forms in HTML</h2>
+    <form action="datastorage.php">
+    
+    <label for="name">
+        Name:
+    </label>
+    <div>
+        <input type="text" name="myname" id="name">
+    </div>
+    <br>
+    <label for="role">
+        Role:
+    </label>
+    <div>
+        <input type="text" id="role">
+    </div>
+    <br>
+    <label for="email">
+        Email:
+    </label>
+    <div>
+        <input type="email" id="email">
+    </div>
+    <br>
+        Gender:
+        <div>
+             Male: <input type="radio" name="Mygender" id="">
+        </div>
+        <div>
+            Female: <input type="radio" name="Mygender" id="">
+        </div>
+        <br>
+    <div>
+        DOB: <input type="date">
+    </div>
+    <br>
+    <div>
+        Bonus: <input type="number">
+    </div>
+    <br>
+    <div>
+        Write about yourself:
+        <br>
+        <textarea name="mytextarea" id="" cols="40" rows="9"></textarea>
+    </div>
+    
+        <br>
+        Are you eligible?: <input type="checkbox" name="mycheckbox" id="">
+    
+    <br>
+    <div>  
+    <input type="submit" value="submit1 " id="sub">
+    <input type="submit" value="submit2" id="sub2">  <input type="reset" value="reset">
+    </div>
+    <hr>
+    <br>
+    <label for="pass">
+        Password:
+    </label>
+    <input type="password" name="password" id="pass">
+    <div>
+        <br>
+    Enter your favourite course: <select name="subjects" id="">
+        <option value="Maths" selected >Maths</option>
+        <option value="Physics">Physics</option>
+        <option value="CSE326">CSE326</option>
+        <option value="Python">Python</option>
+        <option value="CSE111">CSE111</option>
+        <option value="PES">PES</option>
+        <option value="PEL">PEL</option>
+    </select>
+</div>
+</form>
+</div>
+
+</body>
+</html>
